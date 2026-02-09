@@ -97,11 +97,42 @@ footer { background: #2b6cb0; color: white; text-align: center; padding: 20px; }
 <body>
 
 <!-- HERO -->
-<div class="hero">
-  <h1>GEE English Hub | Premium English Speaking Course</h1>
-  <p>Fun • Professional • Global Online ESL Platform</p>
-  <p>Established in 2024</p>
-  <button onclick="window.location.href='#booking'">Book Your Free Trial Class</button>
+<div style="
+    position: relative;
+    background-image: url('assets/images/hero-bg.png'); /* path to your uploaded image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+">
+  <!-- Dark overlay -->
+  <div style="
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+  "></div>
+
+  <!-- Hero content -->
+  <div style="position: relative; z-index: 2;">
+    <h1>GEE English Hub | Premium English Speaking Course</h1>
+    <p>Fun • Professional • Global Online ESL Platform</p>
+    <p>Established in 2024</p>
+    <button onclick="window.location.href='#booking'" style="
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #FFD700;
+        color: #000;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    ">Book Your Free Trial Class</button>
+  </div>
 </div>
 
 <!-- ABOUT -->
@@ -253,4 +284,5 @@ My teaching approach is friendly, patient, and supportive, ensuring every studen
 
 </body>
 </html>
+
 
