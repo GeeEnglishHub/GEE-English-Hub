@@ -5,34 +5,54 @@ gee-english-hub-premium.html
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEE English Hub | Premium-Quality Online English Classes </title>
-/* HEADER + BANNER */
-header {
-  background: linear-gradient(135deg, #2b6cb0, #38b2ac);
+<title>GEE English Hub | Premium Online ESL Lessons</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* ANIMATED HERO */
+.hero {
+  background: linear-gradient(120deg, #2b6cb0, #38b2ac, #fbbf24);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
   color: white;
-  padding: 50px 10%;
   text-align: center;
+  padding: 80px 10%;
 }
 
-header img {
-  width: 120px;
-  border-radius: 50%;
-  background: white;
-  padding: 5px;
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
-header h1 {
-  font-size: 2.8rem;
-  margin: 10px 0;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-header p {
-  font-size: 1.2rem;
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* LANGUAGE FLAGS */
+.lang {
+  margin-top: 10px;
+}
+.lang img {
+  width: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 /* SECTIONS */
 section {
-  padding: 50px 10%;
+  padding: 60px 10%;
   background: white;
   margin-bottom: 10px;
 }
@@ -40,68 +60,64 @@ section {
 h2 {
   color: #2b6cb0;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* CARDS */
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
 }
 
+/* CARDS */
 .card {
   background: #f0f8ff;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* BUTTONS */
 .btn {
   display: inline-block;
-  padding: 12px 20px;
-  border-radius: 25px;
+  padding: 12px 25px;
+  border-radius: 30px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 5px;
 }
-
 .btn-book { background: #2b6cb0; }
 .btn-line { background: #00c300; }
 .btn-whatsapp { background: #25d366; }
+.btn:hover { opacity: 0.85; }
 
-.btn:hover {
-  opacity: 0.85;
+/* PRICE TABLE */
+.price-card {
+  background: white;
+  border: 2px solid #2b6cb0;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+.price-card h3 {
+  color: #2b6cb0;
+  font-size: 1.5rem;
+}
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
-/* BOOKING FORM */
-form input, form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  margin-top: 10px;
-  background: #2b6cb0;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
-/* TESTIMONIALS */
-.testimonial {
+/* FAQ */
+.faq {
   background: #fff8e1;
   padding: 15px;
   border-radius: 12px;
-  font-style: italic;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -112,122 +128,144 @@ footer {
   padding: 20px;
 }
 
-/* MOBILE FRIENDLY */
-@media (max-width: 600px) {
-  header h1 { font-size: 2rem; }
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1 { font-size: 2.2rem; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <h2>GEE English Hub</h2>
-  <div>
-    <a href="#courses">Courses</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#booking">Book</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<!-- HERO -->
+<!-- HERO BANNER -->
 <div class="hero">
-  <h1>Premium Online English Lessons</h1>
-  <p>Fun • Professional • Global Online ESL Platform</p>
-  <p>For Japanese, Thai, Korean, Chinese, and international students worldwide</p>
-  <p>Established in 2024</p>
- <button onclick="window.location.href='#booking'">Book Your Free Trial Class</button>
+  <h1>GEE English Hub</h1>
+  <p>Premium Online ESL Lessons | Established 2024</p>
+  <p>For Kids • Professionals • Japanese • Thai • Global Students</p>
+
+  <div class="lang">
+    🇯🇵 🇹🇭 🇺🇸 🇵🇭
+  </div>
+</div>
 
 <!-- ABOUT -->
 <section>
-  <h2>About GEE English Hub</h2>
-  <p>GEE English Hub is a private online English platform providing high-quality ESL training for kids, professionals, and test takers worldwide.</p>
+  <h2>🌟 About GEE English Hub</h2>
+  <p>GEE English Hub is a premier online language platform dedicated to bridging the gap between potential and fluency. Established in 2024, we provide elite ESL training tailored for young learners, corporate professionals, and academic test-takers globally.
+
+Our mission is to empower students with the precision and poise needed to navigate the world. By mastering grammar and speaking with newfound confidence, our students don't just learn a language—they unlock global opportunities and connect with the world on their own terms.</p>
   <p><strong>Together, we can make dreams a reality. I’m excited to see you in my class soon!</strong></p>
 </section>
 
 <!-- COURSES -->
-<section id="courses">
-  <h2>Courses Offered</h2>
+<section>
+  <h2>📚 Courses Offered</h2>
   <div class="grid">
-    <div class="card">🎈 Kids ESL Lessons</div>
-    <div class="card">💼 Business English</div>
+    <div class="card">🎈 Fun & Engaging Kids Lessons</div>
+   <div class="card">💼 Business English</div>
     <div class="card">📖 Grammar Lessons</div>
+    <div class="card">🗣️ ESL Conversation/div>
     <div class="card">⚡ Callan Method</div>
     <div class="card">📝 TOEIC Preparation</div>
-    <div class="card">🇯🇵 EIKEN Preparation</div>
-    <div class="card">🗣️ Free Trial Conversation</div>
+    <div class="card">🇯🇵 EIKEN Preparation (Japanese Students)</div>
+    <div class="card">💬 Mock Interview Practice</div>
   </div>
 </section>
 
+<!-- LESSON DURATION -->
+<section>
+  <h2>⏰ Lesson Duration</h2>
+  <ul>
+    <li>25 Minutes</li>
+    <li>50 Minutes</li>
+  </ul>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <h2>Lesson Packages</h2>
+  <div class="grid">
+
+    <div class="price-card">
+      <h3>Starter</h3>
+      <p class="price">$3 – $6</p>
+      <p>25 Minutes ESL Conversation</p>
+      <p>Ideal for beginners and casual learners</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Standard</h3>
+      <p class="price">$7 – $10</p>
+      <p>50 Minutes Grammar & Speaking</p>
+      <p>Perfect for regular students and skill improvement</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Premium</h3>
+      <p class="price">$11 – $13</p>
+      <p>50 Minutes Exam & Interview Training</p>
+      <p>For test takers (TOEIC, EIKEN) and job interview practice</p>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- BOOKING -->
-<section id="booking">
-  <h2>Book a Lesson</h2>
-  <p>Schedule your lesson instantly or message the teacher:</p>
+<section>
+  <h2>📅 Book a Lesson</h2>
+  <p>Book instantly or message the teacher:</p>
+  <a href=<a href="https://calendar.app.google/dX5xiVG8QTjMGgcD6" target="_blank" class="btn btn-book">Book a Lesson</a>
+</a>
+</a>
+  <a href=https://line.me/ti/p/~myguccizek1220</a>
+  <<a href="https://mail.google.com/" class="geeenglishhub@gmail.com">
 
-  <!-- Google Calendar Booking Button -->
-  <a href="https://calendar.app.google/CzBCqbYfKMBPPFx67" target="_blank" class="btn btn-book">
-    📅 Book via Google Calendar
-  </a>
-
-  <!-- LINE Chat -->
-  <a href="https://line.me" target="_blank" class="btn btn-line">
-    💬 Chat on LINE
-  </a>
-
-  <!-- Gmail Contact -->
-  <a href="mailto:geeenglishhub@gmail.com" class="btn btn-gmail">
-    📧 Email the Teacher
-  </a>
+</a>
 </section>
 
 <!-- PAYMENT -->
-<section id="payment">
-  <h2>Pay for Your Lesson</h2>
-  <a href="YOUR_PAYPAL_LINK" class="btn btn-paypal">Pay with PayPal</a>
-  <a href="YOUR_WISE_LINK" class="btn btn-wise">Pay with Wise</a>
+<section>
+  <h2>💳 Payment Methods</h2>
+  <ul>
+    <li>Wise</li>
+    <li>PayPal</li>
+    <li>Bank Transfer (coordinate with teacher)</li>
+  </ul>
 </section>
 
-<!-- TEACHER -->
+<!-- TEACHER PROFILE -->
 <section>
-  <h2>Teacher Profile</h2>
+  <h2>👩‍🏫 Teacher Profile</h2>
   <div class="card">
-    <strong>Teacher Gee</strong><br>
-    Certified ESL teacher with more than 10 years of experience teaching kids, Japanese, Thai, and international learners. Friendly, patient, and dedicated to student success.
+    <p><strong>Teacher Gee</strong></p>
+    <p>Best for a family-friendly site or for students who may feel nervous about speaking.
+
+Expert Guidance, Personalized for You Hi! I’m a certified ESL teacher with more than 10 years of experience bringing the English language to life for students worldwide. Having worked extensively with learners from Japan, Thailand, and beyond, I understand the unique challenges of different language backgrounds. I pride myself on creating a friendly, patient, and supportive environment where students of all ages feel confident to take risks and grow. Your success is my greatest motivation.</p>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section>
-  <h2>Student Testimonials</h2>
+  <h2>💬 Student Testimonials</h2>
   <div class="grid">
-    <div class="testimonial">“Teacher Gee is fun and kind. My English improved a lot!” – Yuki </div>
-    <div class="testimonial">“My child loves her lessons!” – Maria </div>
-    <div class="testimonial">“Clear explanation. Highly recommended!” – Somchai</div>
-    <div class="testimonial">“The teacher is lovely, fun to talk to, and you can talk to her about anything.” – Winter</div>
-    <div class="testimonial">“Thank you for your always fun and lively lessons. Both Miori and I love your guidance.” – Mrs. Michisita</div>
-    <div class="testimonial">“I am honored to have had the opportunity to take this course after such a long time. I was impressed by how streamlined and logical the lessons were.” – Madoka</div>
+    <div class="card">“Teacher Gee is fun and kind. My English improved a lot!” – Yuki 🇯🇵</div>
+    <div class="card">“My child loves her kids class!” – Maria 🇵🇭</div>
+    <div class="card">“Clear explanation. Highly recommended!” – Somchai 🇹🇭</div>
   </div>
 </section>
 
 <!-- FAQ -->
 <section>
-  <h2>Frequently Asked Questions</h2>
-  <div class="card"><b>Do you offer free trial?</b><br>Yes, a free conversational class is available.</div>
-  <div class="card"><b>What platform do you use?</b><br>Zoom, Google Meet or Microsoft Teams.</div>
-  <div class="card"><b>Can kids join?</b><br>Yes! Fun kids lessons are available.</div>
+  <h2>❓ Frequently Asked Questions</h2>
+  <div class="faq"><strong>Q:</strong> Do you offer free trial?<br><strong>A:</strong> Yes, free conversational class is available.</div>
+  <div class="faq"><strong>Q:</strong> What platform do you use?<br><strong>A:</strong> Zoom or Google Meet.</div>
+  <div class="faq"><strong>Q:</strong> Can kids join?<br><strong>A:</strong> Yes! Fun and engaging kids lessons are available.</div>
 </section>
 
-<!-- FOOTER -->
-<footer id="contact">
-  <p>© 2024 GEE English Hub | Premium Online ESL Academy</p>
+<footer>
+  <p>© 2024 GEE English Hub | Premium Online ESL Lessons</p>
 </footer>
 
 </body>
-
 </html>
-
-
-
-
