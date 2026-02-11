@@ -16,13 +16,20 @@ body {
 
 /* ANIMATED HERO */
 .hero {
-  background: linear-gradient(120deg, #2b6cb0, #38b2ac, #fbbf24);
-  background-size: 300% 300%;
-  animation: gradientMove 10s ease infinite;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('gee_english_hub_1MB.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: white;
   text-align: center;
-  padding: 80px 10%;
+  padding: 100px 10%;
 }
+
 
 @keyframes gradientMove {
   0% {background-position: 0% 50%;}
@@ -253,6 +260,7 @@ My teaching approach is friendly, patient, and supportive, ensuring every studen
 
 </body>
 </html>
+
 
 
 
