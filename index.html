@@ -16,7 +16,7 @@ body {
 
 /* ANIMATED HERO */
 .hero {
-  background: gee_english_hub_1MB.jpg(120deg, #2b6cb0, #38b2ac, #fbbf24);
+  background: linear-gradient(120deg, #2b6cb0, #38b2ac, #fbbf24);
   background-size: 300% 300%;
   animation: gradientMove 10s ease infinite;
   color: white;
@@ -42,7 +42,6 @@ body {
   cursor: pointer;
 }
 .hero button:hover { opacity: 0.85; }
-
 
 /* SECTIONS */
 section { padding: 60px 10%; margin-bottom: 10px; background: white; }
@@ -97,61 +96,12 @@ footer { background: #2b6cb0; color: white; text-align: center; padding: 20px; }
 </head>
 <body>
 
-  <!-- Hero content -->
-  <div style="<!-- HERO -->
-<div style="
-    position: relative;
-    background-image: gee_english_hub_1MB.jpg; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    overflow: hidden;
-">
-  <!-- Dark overlay -->
-  <div style="
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-  "></div>
-
-  <!-- Hero content -->
-  <div style="gee_english_hub_1MB.jpg">
-    <h1>GEE English Hub | Premium English Speaking Course</h1>
-    <p>Fun • Professional • Global Online ESL Platform</p>
-    <p>For Japanese, Thai, Korean, Chinese, and international students worldwide</p>
-    <p>Established in 2024</p>
-    <button onclick="window.location.href='#booking'" style="
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        background-color: #FFD700;
-        color: #000;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 20px;
-    ">Book Your Free Trial Class</button>
-  </div>
-</div>
-">
-    <h1>GEE English Hub | Premium English Speaking Course</h1>
-    <p>Fun • Professional • Global Online ESL Platform</p>
-    <p>Established in 2024</p>
-    <button onclick="window.location.href='#booking'" style="
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        background-color: #FFD700;
-        color: #000;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 20px;
-    ">Book Your Free Trial Class</button>
-  </div>
+<!-- HERO -->
+<div class="hero">
+  <h1>GEE English Hub | Premium English Speaking Course</h1>
+  <p>Fun • Professional • Global Online ESL Platform</p>
+  <p>Established in 2024</p>
+  <button onclick="window.location.href='#booking'">Book Your Free Trial Class</button>
 </div>
 
 <!-- ABOUT -->
@@ -303,6 +253,7 @@ My teaching approach is friendly, patient, and supportive, ensuring every studen
 
 </body>
 </html>
+
 
 
 
